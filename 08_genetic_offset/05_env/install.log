@@ -1,0 +1,33 @@
+R: R version 4.4.2 (2024-10-31) 
+目标库: <package root>/03_r_env/R_libs 
+
+[CRAN] 已齐
+[Bioc] 安装: LEA, qvalue 
+Bioconductor version 3.20 (BiocManager 1.30.27), R 4.4.2 (2024-10-31)
+Installing package(s) 'BiocVersion', 'LEA', 'qvalue'
+试开URL’https://bioconductor.statistik.tu-dortmund.de/packages/3.20/bioc/bin/macosx/big-sur-arm64/contrib/4.4/BiocVersion_3.20.0.tgz'
+Content type 'application/octet-stream' length 5747 bytes
+==================================================
+downloaded 5747 bytes
+
+试开URL’https://bioconductor.statistik.tu-dortmund.de/packages/3.20/bioc/bin/macosx/big-sur-arm64/contrib/4.4/LEA_3.18.0.tgz'
+Content type 'application/octet-stream' length 979192 bytes (956 KB)
+==================================================
+downloaded 956 KB
+
+试开URL’https://bioconductor.statistik.tu-dortmund.de/packages/3.20/bioc/bin/macosx/big-sur-arm64/contrib/4.4/qvalue_2.38.0.tgz'
+Content type 'application/octet-stream' length 2812393 bytes (2.7 MB)
+==================================================
+downloaded 2.7 MB
+
+
+下载的二进制程序包在
+	/var/folders/q0/nyp86h6d7mgd3_z9rz5nvds80000gn/T//RtmppCJJrE/downloaded_packages里
+
+=== 结果 ===
+BiocManager  OK     1.30.27
+vegan        OK     2.7.3
+psych        OK     2.6.1
+data.table   OK     1.18.2.1
+LEA          OK     3.18.0
+qvalue       OK     2.38.0

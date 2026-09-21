@@ -1,0 +1,46 @@
+# This repository ships code and documentation only; raw data, intermediate
+# products and results stay local. The pattern is ignore-everything-then-allow
+# source, so any new result file type (rasters, matrices, caches, reports) is
+# excluded by default.
+*
+!*/
+!.gitignore
+!*.md
+!*.py
+!*.R
+!*.sh
+!**/requirements.txt
+!**/install.log
+
+# ============================================================
+# The block below comes last and overrides the source allow-list above.
+# Git uses the LAST matching rule, so these must exclude whole directories.
+# ============================================================
+
+# Third-party R package library: a macOS arm64 build containing many other
+# people's .R/.sh files. Reinstall it on another machine.
+03_r_env/R_libs/
+# Chapter 07's Python virtual environment: same reasoning, contains a large
+# number of .py files under site-packages.
+**/.venv/
+**/__pycache__/
+
+# PLINK scratch directory written at run time (holds relieff_bestk.R for Relief-F)
+05_results/_tmp
+05_results/_tmp.*
+
+# 06_references is entirely other people's work: reference PDFs, Chinese
+# full-text translations, a scraped news archive, plus third-party scripts
+# under 参考文献代码
+06_references/
+# A third-party thesis at the package root
+external_thesis.docx
+
+# ============================================================
+# Report builders whose text names the study species. They stay local;
+# the .docx reports they produce are not redistributed either.
+# ============================================================
+04_population_assignment/build_design.py
+04_population_assignment/build_paper.py
+04_population_assignment/build_report.py
+08_genetic_offset/05_env/build_offset_report.py
